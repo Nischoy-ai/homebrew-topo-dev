@@ -8,25 +8,23 @@ provisioned.
 ## Install
 
 ```sh
-brew install nischoy-ai/topo-dev/topo-mid
+brew install nischoy-ai/topo-dev/topo
 topo version
 ```
 
 Upgrade or remove the development build with:
 
 ```sh
-brew upgrade nischoy-ai/topo-dev/topo-mid
-brew uninstall topo-mid
+brew upgrade nischoy-ai/topo-dev/topo
+brew uninstall topo
 ```
 
-The formula is named `topo-mid`, but it installs the executable as `topo`.
-Install only one Topo formula at a time. An explicit conflict can be added
-when the future stable `topo` formula exists; Homebrew's audit rejects a
-conflict declaration that points to a formula that does not exist yet.
+The formula and executable are both named `topo`. Install only one Topo
+formula at a time.
 
 ## Current development build
 
-- Version: `v0.0.0-mid.1`
+- Version: `v0.0.0-dev.1`
 - Topo source commit:
   [`32733488a704114e3a805c6313aae4257cade7d4`](https://github.com/Nischoy-ai/topo/commit/32733488a704114e3a805c6313aae4257cade7d4)
 - Source pull request:
