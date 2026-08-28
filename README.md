@@ -39,9 +39,10 @@ production executables cannot silently shadow one another.
 These are not production release artifacts. They have no Apple Developer ID
 signature, notarization ticket, Sigstore bundle, GitHub build provenance, SBOM,
 or package-channel promotion evidence. The macOS linker supplies only an
-ad-hoc signature with no team identity. GitHub Release asset immutability and
-the formula's SHA-256 checks detect accidental or post-formula byte changes;
-they do not establish the protected production-release trust chain.
+ad-hoc signature with no team identity. The versioned release URLs and
+formula-pinned SHA-256 checks detect accidental or post-formula byte changes;
+they do not make the GitHub Release immutable or establish the protected
+production-release trust chain.
 
 Do not use this tap for production deployments. The future official channel
 remains `Nischoy-ai/homebrew-tap` and will be published only through Topo's
