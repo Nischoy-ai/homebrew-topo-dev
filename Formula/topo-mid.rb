@@ -26,8 +26,6 @@ class TopoMid < Formula
     end
   end
 
-  conflicts_with "topo", because: "both install the topo executable"
-
   def install
     bin.install "topo"
     doc.install "LICENSE", "README.md"

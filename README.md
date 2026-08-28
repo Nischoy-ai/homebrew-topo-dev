@@ -20,8 +20,9 @@ brew uninstall topo-mid
 ```
 
 The formula is named `topo-mid`, but it installs the executable as `topo`.
-It conflicts with a future stable `topo` formula so the development and
-production executables cannot silently shadow one another.
+Install only one Topo formula at a time. An explicit conflict can be added
+when the future stable `topo` formula exists; Homebrew's audit rejects a
+conflict declaration that points to a formula that does not exist yet.
 
 ## Current development build
 
