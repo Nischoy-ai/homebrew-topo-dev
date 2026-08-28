@@ -1,28 +1,28 @@
 class Topo < Formula
   desc "Development build of the destination-neutral infrastructure discovery data plane"
   homepage "https://github.com/Nischoy-ai/topo"
-  version "0.0.0-dev.1"
+  version "0.0.0-dev.2"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.1/topo_0.0.0-dev.1_darwin_amd64.tar.gz"
-      sha256 "a6bd8f598e84617f34705c795824f06c76472568bff04ba21192f71ba52b8087"
+      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.2/topo_0.0.0-dev.2_darwin_amd64.tar.gz"
+      sha256 "eaa9a6a686f1ce61b6e1f2b9b2751891848cf26ca0669a3b7a455f294e611974"
     end
     on_arm do
-      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.1/topo_0.0.0-dev.1_darwin_arm64.tar.gz"
-      sha256 "c4535123e22329d3ebd341f5ddb1127154a943e792bf45ea840724e596bdba8a"
+      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.2/topo_0.0.0-dev.2_darwin_arm64.tar.gz"
+      sha256 "dec064b2b2cab8eedd89708a5d9910a919d4478f99d3edfb143e9f1dc625fce0"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.1/topo_0.0.0-dev.1_linux_amd64.tar.gz"
-      sha256 "1506a87b4d97e40bac9d52f85df74ca1f17e84875505445d766a4da040224172"
+      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.2/topo_0.0.0-dev.2_linux_amd64.tar.gz"
+      sha256 "19afe094185b1add193c18200d6c2698bd8bdde67423fec007c60578cf9d1069"
     end
     on_arm do
-      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.1/topo_0.0.0-dev.1_linux_arm64.tar.gz"
-      sha256 "136cc44a6234758ed86181ab464ad67ab291251875f41e40dd4b5f4bdb17929a"
+      url "https://github.com/Nischoy-ai/homebrew-topo-dev/releases/download/v0.0.0-dev.2/topo_0.0.0-dev.2_linux_arm64.tar.gz"
+      sha256 "1902205916b17344e5c4394ba549447fba07ef1cc3adc5a2fe3244556ee77166"
     end
   end
 
@@ -34,12 +34,12 @@ class Topo < Formula
   def caveats
     <<~EOS
       This is an unsigned development build from Topo commit
-      32733488a704114e3a805c6313aae4257cade7d4. It has no Developer ID
+      97f783ce83c7462f8ef999a453262f8107a9494f. It has no Developer ID
       signature or notarization ticket and is not supported for production.
     EOS
   end
 
   test do
-    assert_equal "v0.0.0-dev.1", shell_output("#{bin}/topo version").strip
+    assert_equal "v0.0.0-dev.2", shell_output("#{bin}/topo version").strip
   end
 end

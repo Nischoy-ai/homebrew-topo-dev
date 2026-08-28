@@ -24,14 +24,18 @@ formula at a time.
 
 ## Current development build
 
-- Version: `v0.0.0-dev.1`
+- Version: `v0.0.0-dev.2`
 - Topo source commit:
-  [`32733488a704114e3a805c6313aae4257cade7d4`](https://github.com/Nischoy-ai/topo/commit/32733488a704114e3a805c6313aae4257cade7d4)
+  [`97f783ce83c7462f8ef999a453262f8107a9494f`](https://github.com/Nischoy-ai/topo/commit/97f783ce83c7462f8ef999a453262f8107a9494f)
 - Source pull request:
-  [Nischoy-ai/topo#48](https://github.com/Nischoy-ai/topo/pull/48)
+  [Nischoy-ai/topo#49](https://github.com/Nischoy-ai/topo/pull/49)
 - Toolchain: exact Go `1.25.13`, CGO disabled
 - Build: reproduced byte-for-byte from two separate source paths before
   publication
+- Security gate: `golang.org/x/crypto` v0.55.0; zero reachable
+  vulnerabilities with govulncheck v1.7.0. The withdrawn `v0.0.0-dev.1`
+  build used v0.54.0, which the gate began rejecting as reachable
+  `GO-2026-6303` on 2026-08-28.
 
 ## Security and support boundary
 
