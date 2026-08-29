@@ -24,11 +24,13 @@ formula at a time.
 
 ## Current development build
 
-- Version: `v0.0.0-dev.2`
+- Version: `v0.0.0-dev.3`
 - Topo source commit:
-  [`97f783ce83c7462f8ef999a453262f8107a9494f`](https://github.com/Nischoy-ai/topo/commit/97f783ce83c7462f8ef999a453262f8107a9494f)
+  [`c2332fcbeec734b7d19ba07b1ef193881a2545fd`](https://github.com/Nischoy-ai/topo/commit/c2332fcbeec734b7d19ba07b1ef193881a2545fd)
 - Source pull request:
-  [Nischoy-ai/topo#49](https://github.com/Nischoy-ai/topo/pull/49)
+  [Nischoy-ai/topo#51](https://github.com/Nischoy-ai/topo/pull/51)
+- Feature: supported `topo publish servicenow` workflow through ServiceNow's
+  native IRE API
 - Toolchain: exact Go `1.25.13`, CGO disabled
 - Build: reproduced byte-for-byte from two separate source paths before
   publication
